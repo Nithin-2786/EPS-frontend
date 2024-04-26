@@ -34,7 +34,7 @@ function handleSubmit(event) {
             
             props.isLogin(decoded.user.type,decoded.user.username);
         } else {
-            console.error("Login failed", data.message);
+            alert("Login failed", data.message);
         }
     })
     .catch((error) => {
